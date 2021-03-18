@@ -17,6 +17,7 @@ import {
   useColorScheme,
   Image,
   View,
+  ImageBackground,
 } from 'react-native';
 
 import {
@@ -27,11 +28,15 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+
+
+
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
-      <Text
+      
+           <Text
         style={[
           styles.sectionTitle,
           {
@@ -52,6 +57,7 @@ const Section = ({children, title}): Node => {
     </View>
   );
 };
+
 
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -84,7 +90,7 @@ const App: () => Node = () => {
             <View style={styles.Textst}>
 
             <Text style={styles.heading}>Technical Courses</Text>
-            
+            <View style={styles.technical}>
             <Text>Short Course of CAM</Text>
             <Text> Inspection and measurement techniques </Text>
             <Text>Team building workshop </Text>
@@ -95,7 +101,7 @@ const App: () => Node = () => {
             <Text> Hinopak certified quaTextty assessor </Text>
             <Text> Six sigma/ Process certification </Text>
             <Text> Leadership skill through personal and professional effectiveness </Text>
-            
+            </View>
             
 
             <Text style={styles.heading}>Computer Skills</Text>
@@ -131,20 +137,27 @@ const styles = StyleSheet.create({
     
     marginTop: 32,
     paddingHorizontal: 24,
-    textAlign:'center'
+    textAlign:'center',
+    color:'white'
   },
   sectionTitle: {
     fontSize: 24,
     fontWeight: '600',
+    color: 'white'
   },
   sectionDescription: {
     marginTop: 8,
     fontSize: 18,
     fontWeight: '400',
+    color:'white'
   },
   highlight: {
     fontWeight: '700',
   },
+  technical:{
+    color:'white'
+  },
+
   heading:{
     color:'white',
     fontSize: 18,
@@ -152,15 +165,24 @@ const styles = StyleSheet.create({
      
   },
   name2:{
-    color:'black',
+    color:'yellow',
     padding:5,
     fontSize: 18,
-    backgroundColor:'grey',
+    backgroundColor:'coral',
+    
     textAlign:'center'
   },
-  pic:{
-    textAlign:'center'}
-  
+container:{
+  backgroundColor:'wheat',
+  color:'white'
+},
+
+image: {
+    flex: 1,
+    resizeMode: "cover",
+    justifyContent: "center"
+  },
+   
   
 });
 

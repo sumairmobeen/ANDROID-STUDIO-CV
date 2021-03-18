@@ -73,6 +73,8 @@ const App: () => Node = () => {
       <Text style={styles.name2}>MY RESUME</Text></View>
       <View style={styles.pic}><Image source={require('./mobeen3.png')}
              style={{ width: 100, height: 100, borderRadius: 100, marginLeft: 10, marginTop: 10 }} />
+             <Text style={styles.main}> Web Graphics and Mobile App Developer</Text>
+             <Text style={styles.main1}> Mechanical Engineer</Text>
              </View>
       <StatusBar style="auto" />
 
@@ -89,7 +91,7 @@ const App: () => Node = () => {
 
             <View style={styles.Textst}>
 
-            <Text style={styles.heading}>Technical Courses</Text>
+            <Text style={styles.heading}>Technical Courses :</Text>
             <View style={styles.technical}>
             <Text>Short Course of CAM</Text>
             <Text> Inspection and measurement techniques </Text>
@@ -104,18 +106,18 @@ const App: () => Node = () => {
             </View>
             
 
-            <Text style={styles.heading}>Computer Skills</Text>
+            <Text style={styles.heading}>Computer Skills :</Text>
             <Text>
-            <Text>Web Graphics and Mobile App</Text> 
-            <Text>Graphic Designing</Text>
-            <Text>Adobe Audio Auditio</Text>
-            <Text>Adobe Video Premier</Text>
-            <Text>Adobe After Effect and 2D Animation</Text>
+            <Text> Web Graphics and Mobile App    </Text>
+            <Text>Graphic Designing   </Text>
+            <Text>Adobe Audio Auditio </Text>
+            <Text>Adobe Video Premier </Text>
+            <Text>Adobe After Effect and 2D Animation </Text>
             <Text>Git</Text>
             <Text>MS Office</Text>
             </Text>
 
-            <Text style={styles.heading}>Technical Skills</Text>
+            <Text style={styles.heading}>Technical Skills :</Text>
 
            <Text>Local parts Development and inspection</Text>
     <Text>Development of Inspection jigs/Fixtures</Text>
@@ -124,6 +126,11 @@ const App: () => Node = () => {
     <Text>HandTextng Field Complaints (PIR)</Text>
     <Text>HandTextng Textne Complaints (QPR)</Text>
     <Text>Vendor Education About Safety, House Keeping at their end.</Text>
+
+    <Text style={styles.contact}>Contact Me :</Text>
+    <Text style={styles.email}>E-Mail : mobeenghrs@gmail.com</Text>
+    <Text style={styles.git}>github : @sumairmobeen</Text>
+    <Text style={styles.cont}>Contact No. 00-92-306-2160288</Text>
 
     </View>
       
@@ -157,6 +164,15 @@ const styles = StyleSheet.create({
   technical:{
     color:'white'
   },
+  email:{
+    color:'blue'
+  },
+  git:{
+    color:'blue'
+  },
+  cont:{
+    color:'blue'
+  },
 
   heading:{
     color:'white',
@@ -164,8 +180,13 @@ const styles = StyleSheet.create({
     backgroundColor:'black'
      
   },
+
+  contact:{
+    backgroundColor:'brown',
+    color:'black'
+  },
   name2:{
-    color:'yellow',
+    color:'black',
     padding:5,
     fontSize: 18,
     backgroundColor:'coral',
@@ -176,6 +197,14 @@ container:{
   backgroundColor:'wheat',
   color:'white'
 },
+main:{ 
+  color:'blue',
+  display: 'flex'
+},
+
+ main1:{ 
+  color:'blue'},
+
 
 image: {
     flex: 1,
